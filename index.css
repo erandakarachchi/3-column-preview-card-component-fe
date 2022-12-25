@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --darkest-cyan: hsl(179, 100%, 13%);
+  --ts-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+h2 {
+  color: var(--light-gray);
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+  margin: 2rem 0rem;
+}
+
+p {
+  color: var(--light-gray);
+  font-family: Lexend Deca;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 3rem 0rem;
+  line-height: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: calc(50vh - 250px);
+}
+
+.card {
+  max-width: 11rem;
+  padding: 2.5rem;
+  min-height: 250px;
+}
+
+.card:nth-child(1) {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+.card:nth-child(3) {
+  background-color: var(--darkest-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.learn-more {
+  max-width: 6rem;
+  background-color: var(--ts-white);
+  padding: 8px;
+  border: 1px solid var(--ts-white);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: Lexend Deca;
+  text-align: center;
+  color: var(--bright-orange);
+}
+
+.learn-more:hover {
+  border: 1px solid var(--ts-white);
+  background: rgba(0,0,0,0.1);
+  color: var(--ts-white);
+}
+
+.orange-text {
+  color: var(--bright-orange);
+}
+.cyan-text {
+  color: var(--dark-cyan);
+}
+.dark-cyan-text {
+  color: var(--darkest-cyan);
+}
+
+.attribution {
+  margin-top: 4rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: var(--ts-white);
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card:nth-child(1) {
+    background-color: var(--bright-orange);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .card:nth-child(3) {
+    background-color: var(--darkest-cyan);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
