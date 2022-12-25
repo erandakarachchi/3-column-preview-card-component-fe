@@ -5,8 +5,19 @@
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
   --darkest-cyan: hsl(179, 100%, 13%);
-  --ts-white: hsla(0, 0%, 100%, 0.75);
-  --light-gray: hsl(0, 0%, 95%);
+  --ts-white: hsl(0, 0%, 95%);
+  --light-gray: hsla(0, 0%, 100%, 0.75);
+}
+
+/* This will hide the content visually but available for screen readers */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 h2 {
@@ -14,6 +25,7 @@ h2 {
   font-family: Big Shoulders Display;
   font-weight: 700;
   margin: 2rem 0rem;
+  text-transform: uppercase;
 }
 
 p {
@@ -55,7 +67,7 @@ p {
 .learn-more {
   max-width: 6rem;
   background-color: var(--ts-white);
-  padding: 8px;
+  padding: 10px 20px;
   border: 1px solid var(--ts-white);
   border-radius: 20px;
   font-size: 0.8rem;
@@ -66,7 +78,7 @@ p {
 
 .learn-more:hover {
   border: 1px solid var(--ts-white);
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
   color: var(--ts-white);
 }
 
