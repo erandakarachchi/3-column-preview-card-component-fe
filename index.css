@@ -102,15 +102,15 @@ p {
   .card:nth-child(1) {
     background-color: var(--bright-orange);
     border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     border-bottom-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 
   .card:nth-child(3) {
     background-color: var(--darkest-cyan);
     border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
