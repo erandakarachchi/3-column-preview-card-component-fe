@@ -37,11 +37,18 @@ p {
   line-height: 1.5rem;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .card-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: calc(50vh - 250px);
 }
 
 .card {
@@ -125,5 +132,10 @@ p {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+
+  .main-container {
+    margin-top: 5rem;
+    height: auto;
   }
 }
